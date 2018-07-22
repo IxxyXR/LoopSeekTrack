@@ -12,7 +12,8 @@ public class SingletonLoopSeek : SingletonLoopSeekBase<SingletonLoopSeek>
     Dictionary<int, double> dicLabelTime = new Dictionary<int, double>();
 
     bool canSetTime = true;
-
+    private double originalSpeed = 1;
+    
     void Awake()
     {
         playableDirector = GetComponent<PlayableDirector>();
@@ -34,6 +35,28 @@ public class SingletonLoopSeek : SingletonLoopSeekBase<SingletonLoopSeek>
     {
         if (!dicLabelTime.ContainsKey(label))
             Debug.LogError("dicLabelTime does not contain label:" + label.ToString() + " !", transform);
+    }
+    
+    public void Pause()
+    {
+        if (playableDirector != null)
+        {
+            originalSpeed = playableDirector.playableGraph.GetRootPlayable(0).GetSpeed();
+            playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(0);
+        }
+    }
+
+    public void Resume()
+    {
+        if (playableDirector != null)
+        {
+            playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(originalSpeed);
+        }
+    }
+
+    public void Goto(int label)
+    {
+        SetTime(label, true);
     }
 
     // TimelineのLoopSeekBehaviourからの呼び出しの場合trueを指定する。

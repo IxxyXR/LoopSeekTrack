@@ -57,7 +57,6 @@ MonoBehaviour:
   - m_Start: 0.26666666666666666
     m_ClipIn: 0
     m_Asset: {fileID: 114897657734435016}
-    m_UnderlyingAsset: {fileID: 7400010, guid: dc7b6656cda8bfa4c84b8a51105de829, type: 3}
     m_Duration: 1.65
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114076287931217444}
@@ -115,7 +114,6 @@ MonoBehaviour:
   - m_Start: 1.85
     m_ClipIn: 0
     m_Asset: {fileID: 114669873248012934}
-    m_UnderlyingAsset: {fileID: 7400012, guid: dc7b6656cda8bfa4c84b8a51105de829, type: 3}
     m_Duration: 1.15
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114076287931217444}
@@ -173,7 +171,6 @@ MonoBehaviour:
   - m_Start: 2.783333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 114361422564486692}
-    m_UnderlyingAsset: {fileID: 7400004, guid: dc7b6656cda8bfa4c84b8a51105de829, type: 3}
     m_Duration: 1.9333333333333333
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114076287931217444}
@@ -260,7 +257,6 @@ MonoBehaviour:
   - m_Start: 0.95
     m_ClipIn: 0
     m_Asset: {fileID: 114950803019957136}
-    m_UnderlyingAsset: {fileID: 114950803019957136}
     m_Duration: 0.41666666666666663
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114183394671514886}
@@ -383,11 +379,10 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips:
-  - m_Start: 0.31666666666666665
+  - m_Start: 0.8666666666666667
     m_ClipIn: 0
-    m_Asset: {fileID: 114795099744321944}
-    m_UnderlyingAsset: {fileID: 114188767153861882}
-    m_Duration: 1.6833333333333333
+    m_Asset: {fileID: 114906604134559062}
+    m_Duration: 0.41666666666666674
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114540052608218508}
     m_EaseInDuration: 0
@@ -439,13 +434,69 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: "\u25CF(1,1)"
+    m_DisplayName: PauseClip
     m_Version: 1
-  - m_Start: 2.683333333333333
+  - m_Start: 1.9166666666666665
+    m_ClipIn: 0
+    m_Asset: {fileID: 114795099744321944}
+    m_Duration: 1.05
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 114540052608218508}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: "\u21A9\uFE0E(1,2)"
+    m_Version: 1
+  - m_Start: 3.583333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 114188767153861882}
-    m_UnderlyingAsset: {fileID: 114188767153861882}
-    m_Duration: 1.8166666666666669
+    m_Duration: 1.0333333333333328
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114540052608218508}
     m_EaseInDuration: 0
@@ -528,7 +579,7 @@ MonoBehaviour:
   m_Name: LoopSeekClip
   m_EditorClassIdentifier: 
   label: 1
-  label_next: 1
+  label_next: 2
 --- !u!114 &114897657734435016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -546,6 +597,17 @@ MonoBehaviour:
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
   m_RemoveStartOffset: 1
+--- !u!114 &114906604134559062
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10d87f78f7da842a9ba5c9049079ea09, type: 3}
+  m_Name: PauseClip
+  m_EditorClassIdentifier: 
 --- !u!114 &114950803019957136
 MonoBehaviour:
   m_ObjectHideFlags: 1
