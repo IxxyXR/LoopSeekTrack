@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
-using AdvancedInspector;
 
 [RequireComponent(typeof(PlayableDirector))]
 public class SingletonLoopSeek : SingletonLoopSeekBase<SingletonLoopSeek>
@@ -68,10 +67,10 @@ public class SingletonLoopSeek : SingletonLoopSeekBase<SingletonLoopSeek>
         canSetTime = true;
     }
 
-    [Inspect(0), Title(FontStyle.Bold, "Test"), Spacing(Before = 3)]
+    //[Inspect(0), Title(FontStyle.Bold, "Test"), Spacing(Before = 3)]
     int testLabel;
 
-    [Inspect(1)]
+    //[Inspect(1)]
     void Test()
     {
         StartCoroutine("SetTimeCoroutine", testLabel);

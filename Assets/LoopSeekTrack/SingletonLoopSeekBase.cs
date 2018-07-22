@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System;
 using System.Collections;
-using AdvancedInspector;
 
 public abstract class SingletonLoopSeekBase<T> : MonoBehaviour where T : SingletonLoopSeekBase<T>
 {
